@@ -16,9 +16,9 @@ GHDL_OPTIONS+=-fsynopsys
 
 .PHONY: all prog clean total_clean postsim sim
 
-.SECONDARY: $(PROJECT).bin $(PROJECT)_tb $(PROJECT)_tb.vcd
+.SECONDARY: $(PROJECT).fs $(PROJECT)_tb $(PROJECT)_tb.vcd
 
-all: $(PROJECT).bin
+all: $(PROJECT).fs
 
 # Program FPGA
 prog: $(PROJECT).fs
