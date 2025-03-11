@@ -1,0 +1,8 @@
+# GHDL output
+*.cf
+*.o
+
+# YOSYS and nextpnr output
+*.json
+*.bin
+*.fs
