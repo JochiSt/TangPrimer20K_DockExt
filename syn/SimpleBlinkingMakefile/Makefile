@@ -69,7 +69,7 @@ simview: $(PROJECT)_tb.vcd
 %_tb.cpp: $(OBJECT_FILES)
 	yosys -m ghdl -p " \
 			ghdl $(GHDL_OPTIONS) $(TOP_MODULE); \
-			hierarchy -check -top PLLtest; \
+			hierarchy -check -top $(TOP_MODULE); \
 			write_cxxrtl -header $@"
 	sed -i '1s/^/#include <iostream>\n/' $@
 
