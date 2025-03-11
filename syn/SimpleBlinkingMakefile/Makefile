@@ -49,7 +49,7 @@ $(PROJECT).json: $(PROJECT)_design.json $(CONSTRAINT)
 						--vopt cst=$(CONSTRAINT)
 
 $(PROJECT).fs: $(PROJECT).json
-	gowin_pack --device $(FPGA_FAMILY) $< --output $@
+	gowin_pack --device $(FPGA_DEVICE) $< --output $@
 
 ###############################################################################
 
